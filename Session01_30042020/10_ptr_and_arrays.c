@@ -11,10 +11,10 @@ void print_array(int *arr, int length) {
 
 void init_zero_array(int *arr, int len) {
   int i = 0;
-  while(i++ < len)
+  while(i++ < len) {
+    *arr++ = 0;
+  }
   // Dereference ptr and initialize the value 0 at it's address
-  *arr++ = 0;
-}
 
 int main() {
   int length = 5;
